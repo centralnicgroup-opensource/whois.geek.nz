@@ -18,7 +18,6 @@ whois.geek.nz.        IN  SOA   ns1.luadns.net.   hostmaster.luadns.net.  (
 www                     A       62.116.130.8 
 
 ; Records for the TLD delegations
-bike                    CNAME   whois.donuts.co.
 ac    CNAME   whois.nic.ac.
 academy    CNAME   whois.donuts.co.
 ae    CNAME   whois.aeda.net.ae.
