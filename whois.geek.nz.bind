@@ -1,4 +1,4 @@
-example.org.        IN  SOA   ns1.bind.net.   hostmaster.bind.net.  (
+whois.geek.nz.        IN  SOA   ns1.luadns.net.   hostmaster.luadns.net.  (
                               2012050901  ; serial
                               20m         ; refresh (20 minutes)
                               2m          ; retry (2 minutes)
@@ -13,5 +13,9 @@ example.org.        IN  SOA   ns1.bind.net.   hostmaster.bind.net.  (
                         NS      ns4.luadns.net.
                         NS      ns5.luadns.net.
 
+; Records for the domain itself
 @                       A       62.116.130.8 
 www                     A       62.116.130.8 
+
+; Records for the TLD delegations
+bike                    CNAME   whois.donuts.co.
