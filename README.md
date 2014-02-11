@@ -13,7 +13,7 @@ you can make this easier by adding this to your .bashrc or other compatible
 shell initialization script:
 
 ```
-cat >> .bashrc <<EOF
+cat >> ~/.bashrc <<EOF
 
 iwhois() {
     resolver=".whois.geek.nz"
@@ -25,6 +25,12 @@ EOF
 
 Then you can use `iwhois` as a command that automatically looks at the correct
 server.
+
+if you fancy you can even replace the standard `whois` with `iwhois` by adding this:
+
+    alias whois='iwhois'
+
+to the end of your `.profile` or `.bashrc`.
 
 Please submit pull requests/issues if this function doesn't work, or there are
 better solutions, for your shell and we can add them.
