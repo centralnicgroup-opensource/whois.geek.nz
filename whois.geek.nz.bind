@@ -1,0 +1,17 @@
+example.org.        IN  SOA   ns1.bind.net.   hostmaster.bind.net.  (
+                              2012050901  ; serial
+                              20m         ; refresh (20 minutes)
+                              2m          ; retry (2 minutes)
+                              1w          ; expire (1 week)
+                              1h          ; minimum (1 hour)
+                              )
+
+; Domain NS records are replaced with system name servers
+                        NS      ns1.luadns.net.
+                        NS      ns2.luadns.net.
+                        NS      ns3.luadns.net.
+                        NS      ns4.luadns.net.
+                        NS      ns5.luadns.net.
+
+@                       A       62.116.130.8 
+www                     A       62.116.130.8 
