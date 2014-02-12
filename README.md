@@ -15,10 +15,15 @@ shell initialization script:
 ```
 cat >> ~/.bashrc <<EOF
 
+WHOIS=`which whois`
 iwhois() {
     resolver=".whois.geek.nz"
     tld=`echo ${@: -1} | awk -F "." '{print $NF}'`
-    whois -h $tld$resolver "$@" ;
+    if [ `echo $tld | egrep 'com|net|tv|cc'` ]; then
+        $WHOIS "$@"
+    else
+        $WHOIS -h $tld$resolver "$@"
+    fi;
 }
 EOF
 ```
